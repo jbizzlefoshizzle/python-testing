@@ -19,7 +19,7 @@ viasat_history['Close_200ma'] = viasat_history['Close'].rolling(200).mean()
 viasat_history_summary = viasat_history.describe()
 
 # Generate png of chart
-# sns.relplot(data=viasat_history[['Close', 'Close_200ma']], kind='line', height=3, aspect=2.0)
+sns.relplot(data=viasat_history[['Close', 'Close_200ma']], kind='line', height=3, aspect=2.0)
 # plt.savefig('Images/chart.png')
 
 # Presenting as HTML
